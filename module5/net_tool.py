@@ -125,9 +125,9 @@ def net_L_E(net_mat_d):
 
 # calculates betweenness centrality from a given connectivity matrix
 
-def betweenness_central(net_mat):
+def betweenness_central(net_mat,normalized=True):
     net_mat = np.matrix(net_mat)
     graph = nx.to_networkx_graph(net_mat)
-    bc = nx.betweenness_centrality(graph) # dictionary where key = node
+    bc = nx.betweenness_centrality(graph,normalized=normalized) # dictionary where key = node
     bc = np.array([bc[i] for i in range(len(bc))])
     return bc
