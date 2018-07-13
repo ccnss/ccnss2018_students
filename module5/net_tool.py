@@ -14,7 +14,7 @@ import networkx as nx              # import networkx
 
 # code for generating connectivity matrix from a connectivity list, for small or near-full network
 
-def calculate_network_mat(net_list):
+def net_mat1(net_list):
     len_net = np.amax(net_list)+1
     len_list = len(net_list)
     net_mat = np.zeros((len_net,len_net))
@@ -26,7 +26,7 @@ def calculate_network_mat(net_list):
 
 # code for generating connectivity matrix from a connectivity list, for large yet sparse network
 
-def calculate_network_mat2(net_list):
+def net_mat2(net_list):
     len_net =  np.amax(net_list)+1
     net_mat = sp.sparse.coo_matrix((net_list[:,2], (net_list[:,0],net_list[:,1])), shape=(len_net,len_net) )
     # net_mat_csc = sp.sparse.csc_matrix(net_mat)
@@ -71,7 +71,7 @@ def net_degree_plot(net_mat,net_name):
     
 # calculates clustering coefficient of a given network and a node
 
-def clustering_coeff(net_mat, node_number):
+def clustering_coef(net_mat, node_number):
   
     neighbors = np.nonzero(net_mat[node_number])[0]
     neighbors_N = neighbors.shape[0]
@@ -89,7 +89,7 @@ def clustering_coeff(net_mat, node_number):
 
 # calculate distance matrix from a given connectivity matrix
 
-def mat_distance(net_mat):
+def net_mat_distance(net_mat):
     net_mat = np.matrix(net_mat)
     net_mat_N = len(net_mat)
     net_mat_distance = np.zeros((net_mat_N,net_mat_N))
@@ -113,23 +113,21 @@ def mat_distance(net_mat):
 
 # calculate characteristic path length and efficiency from a given distance matrix
 
-def l_e_distance(net_mat_d):
+def net_L_e(net_mat_d):
     net_mat_d = np.matrix(net_mat_d)
     N = net_mat_d.shape[0]
     
-    l = 1/N * 1/(N-1) * (np.sum(net_mat_d)-np.trace(net_mat_d))
+    L = 1/N * 1/(N-1) * (np.sum(net_mat_d)-np.trace(net_mat_d))
     e = 1/N * 1/(N-1) * (np.sum(1/net_mat_d)-np.trace(1/net_mat_d))
     
-    return l, e
+    return L, e
 
 
 # calculates betweenness centrality from a given connectivity matrix
 
-def calculate_bc(net_mat):
+def betweenness_central(net_mat):
     net_mat = np.matrix(net_mat)
     graph = nx.to_networkx_graph(net_mat)
     bc = nx.betweenness_centrality(graph) # dictionary where key = node
     bc = np.array([bc[i] for i in range(len(bc))])
     return bc
-
-
