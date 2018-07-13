@@ -113,14 +113,14 @@ def net_mat_distance(net_mat):
 
 # calculate characteristic path length and efficiency from a given distance matrix
 
-def net_L_e(net_mat_d):
+def net_L_E(net_mat_d):
     net_mat_d = np.matrix(net_mat_d)
     N = net_mat_d.shape[0]
     
     L = 1/N * 1/(N-1) * (np.sum(net_mat_d)-np.trace(net_mat_d))
-    e = 1/N * 1/(N-1) * (np.sum(1/net_mat_d)-np.trace(1/net_mat_d))
+    E = 1/N * 1/(N-1) * (np.sum(1/net_mat_d)-np.trace(1/net_mat_d))
     
-    return L, e
+    return L, E
 
 
 # calculates betweenness centrality from a given connectivity matrix
