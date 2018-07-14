@@ -105,7 +105,7 @@ def net_mat_distance(net_mat):
         T = T+D 
         net_mat_distance = i*D - T
         i = i+1
-        if len(np.where(net_mat_distance==0)[0]) == 0:
+        if len(np.where(net_mat_distance=<0)[0]) == 0:
             break
         
     return net_mat_distance
