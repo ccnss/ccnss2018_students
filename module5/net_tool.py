@@ -99,7 +99,7 @@ def net_mat_distance(net_mat):
     i=3
 
     for k in range(net_mat_N):
-        net_mat_product = net_mat_product*net_mat
+        net_mat_product = net_mat_product.dot(net_mat)
         net_where = np.where(net_mat_product > 0)  
         D[net_where]=1
         T = T+D 
