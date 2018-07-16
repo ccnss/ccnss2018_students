@@ -1,0 +1,39 @@
+Gyrus Rectus	REC	
+Olfactory Cortex	OLF	
+Supeiror frontal gyrus, orbital part	ORBsup	
+Superior frontal gyrus, medial orbital	ORBsupmed	
+Middle frontal gyrus orbital part	ORBmid	
+Inferior frontal gyrus, orbital part	ORBinf	
+Superior frontal gyrus, dorsolateral	SFGdor	
+Middle frontal gyrus	MFG	
+Inferior frontal gyrus, opercular part	IFGoperc	
+Inferior frontal gyrus, triangular part	IFGtriang	
+Superior frontal gyrus, medial	SFGmed	
+Supplementary motor area	SMA	
+Paracentral lobule	PCL	
+Precentral gyrus	PreCG	
+Rolandic operculum	ROL	
+Postcentral gyrus	PoCG	
+Superior parietal gyrus	SPG	
+Inferior parietal, but supramarginal and angular gyri	IPL	
+Supramarginal gyrus	SMG	
+Angular gyrus	ANG	
+Precuneus	PCUN	
+Superior occipital gyrus	SOG	
+Middle occipital gyrus	MOG	
+Inferior occipital gyrus	IOG	
+Calcarine fissure and surrounding cortex	CAL	
+Cuneus	CUN	
+Lingual gyrus	LING	
+Fusiform gyrus	FFG	
+Heschl gyrus	HES	
+Superior temporal gyrus	STG	
+Middle temporal gyrus	MTG	
+Inferior temporal gyrus	ITG	
+Temporal pole: superior temporal gyrus	TPOsup	
+Temporal pole: middle temporal gyrus	TPOmid	
+Parahippocampal gyrus	PHG	
+Anterior cingulate and paracingulate gyri	ACG	
+Median cingulate and paracingulate gyri	DCG	
+Posterior cingulate gyrus	PCG	
+Insula	INS	
