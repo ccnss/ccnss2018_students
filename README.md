@@ -1,4 +1,16 @@
 # [CCNSS 2018](http://www.ccnss.org/ccn-2018) Tutorials
+This repository contains the Jupyter notebooks released for the [Computational and Cognitive Neuroscience Summer School 2018](http://www.ccnss.org/ccn-2018).
+
+**Jupyter notebooks authored by:**
+
+* Alex Cayco Gajic
+* Asma Motiwala
+* Eric DeWitt
+* John D. Murray
+* Joon-Young Moon
+* Jorge Jaramillo
+* Marco Brigham
+* Vincent Valton
 
 
 Shield: [![CC BY 4.0][cc-by-shield]][cc-by]
